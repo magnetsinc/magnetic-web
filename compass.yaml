@@ -1,0 +1,38 @@
+name: magnetic-web
+id: 'ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/4e560f2b-cc3d-4735-9407-a2d494459d5e'
+description: Serves all web traffic to the Magnetic storefront.
+configVersion: 1
+ownerId: 'ari:cloud:teams::team/b765d6f4-78f8-452c-a883-77a0c4abacf6'
+fields:
+  tier: 1
+  lifecycle: Active
+links:
+  - name: null
+    type: REPOSITORY
+    url: 'https://github.com/magnetsinc/magnetic-web'
+  - name: '#magnetic'
+    type: CHAT_CHANNEL
+    url: 'https://magnetsinc.slack.com/archives/C049E2AUHRC'
+  - name: ''
+    type: PROJECT
+    url: 'https://magnetsinc.atlassian.net/browse/MAG'
+  - name: Architecture overview
+    type: DOCUMENT
+    url: 'https://magnetsinc.atlassian.net/wiki/spaces/MAGNETIC/overview'
+  - name: DataDog
+    type: DASHBOARD
+    url: 'https://app.datadoghq.com/dashboard/v43-thf-yrv/dashboard'
+  - name: ''
+    type: ON_CALL
+    url: 'https://compass-magnets.app.opsgenie.com/settings/schedule/detail/c645a635-51c8-4ef6-9942-5f44b4c087e3'
+  - name: Opsgenie service
+    type: OTHER_LINK
+    url: 'https://compass-magnets.app.opsgenie.com/service/1ef09ce5-1cba-4671-b6aa-f09f3649e215/status'
+relationships:
+  DEPENDS_ON:
+    - 'ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/5edf1aaf-06cf-40a9-8754-85064a05fd3d'
+    - 'ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/b0fc76b8-1924-4cc3-bc1d-26471553bfd6'
+    - 'ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/9e972f77-e6e1-41b2-8c26-d30758eb4a14'
+
+# Learn more about formatting compass.yml:
+# https://go.atlassian.com/compass-yml-format
