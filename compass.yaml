@@ -10,7 +10,7 @@ links:
   - name: '#magnetic'
     type: CHAT_CHANNEL
     url: 'https://magnetsinc.slack.com/archives/C049E2AUHRC'
-  - name: ''
+  - name: 'Jira'
     type: PROJECT
     url: 'https://magnetsinc.atlassian.net/browse/MAG'
   - name: Architecture overview
@@ -19,7 +19,7 @@ links:
   - name: DataDog
     type: DASHBOARD
     url: 'https://app.datadoghq.com/dashboard/v43-thf-yrv/dashboard'
-  - name: ''
+  - name: 'On-call schedule'
     type: ON_CALL
     url: 'https://compass-magnets.app.opsgenie.com/settings/schedule/detail/c645a635-51c8-4ef6-9942-5f44b4c087e3'
   - name: Opsgenie service
