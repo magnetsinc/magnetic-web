@@ -7,9 +7,6 @@ fields:
   tier: 1
   lifecycle: Active
 links:
-  - name: null
-    type: REPOSITORY
-    url: 'https://github.com/magnetsinc/magnetic-web'
   - name: '#magnetic'
     type: CHAT_CHANNEL
     url: 'https://magnetsinc.slack.com/archives/C049E2AUHRC'
