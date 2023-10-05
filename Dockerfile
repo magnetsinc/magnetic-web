@@ -1,17 +1,21 @@
-# 
-FROM python:3.11
+FROM node:alpine3.18.4 as build
 
-# 
-WORKDIR /code
+WORKDIR /app
 
-# 
-COPY ./requirements.txt /code/requirements.txt
+COPY package.json ./
 
-# 
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+COPY package-lock.json package-lock.json
 
-# 
-COPY ./app /code/app
+RUN npm install
 
-# 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+COPY . ./
+
+RUN npm run build
+
+FROM nginx:alpine3.18.4 as release
+
+COPY --from=build /app/build /usr/share/nginx/html/
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
