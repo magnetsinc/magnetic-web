@@ -16,7 +16,7 @@ links:
   - name: Architecture overview
     type: DOCUMENT
     url: "https://magnetsinc.atlassian.net/wiki/spaces/MAGNETIC/overview"
-  - name: DataDog
+  - name: Datadog
     type: DASHBOARD
     url: "https://app.datadoghq.com/dashboard/v43-thf-yrv/dashboard"
   - name: "On-call schedule"
